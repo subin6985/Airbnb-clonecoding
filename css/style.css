@@ -1,0 +1,569 @@
+section.top{
+    padding: 18px;
+    width: 100vw;
+    border: solid 1px #E8E8E8;
+    background-color: #F8F8F8;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 600;
+}
+
+/*HEADER*/
+span{
+    display: inline-block;
+}
+
+span.logo{
+    margin: 20px 0 0 70px;
+}
+
+ul{
+    list-style: none;
+    margin-top: 16px;
+    padding: 0;
+}
+
+li{
+    padding: 10px 15px;
+    float: left;
+}
+
+.tabs{
+    margin: 5px 0 0 150px;
+    color: gray;
+}
+
+.pointed:hover{
+    background-color: #F7F7F7;
+    border-radius: 1.5em;
+}
+
+.tabs .pointed:hover{
+    color: black;
+}
+
+li.pointed.active{
+    font-weight: bold;
+    background-color: white;
+    color: black;
+}
+
+.side{
+    vertical-align: top;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    margin: 5px 0 0 195px;
+    padding: 2px;
+}
+
+.side li img{
+    padding: 0.5px;
+    margin: 1px;
+}
+
+span.option{
+    vertical-align: top;
+    margin-top: 18px;
+    padding: 8px 9px;
+    border: solid 1px #D8D8D8;
+    border-radius: 1.5em;
+    transition: box-shadow 0.1s linear;
+}
+
+span.option:hover{
+    box-shadow: 0 2px 3px #D8D8D8;
+}
+
+span.option img{
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+span.option img.account{
+    margin: 0 0 0 3px;
+}
+
+span.search{
+    display: none;
+    /* width: 850px; */
+    height: 65px;
+    margin: 18px 0 21px 325px;
+    border: solid 1px #D8D8D8;
+    border-radius: 2.25em;
+    box-shadow: 0 1px 7px 0 #D8D8D8;
+}
+
+.searchWindow{
+    position: relative;
+}
+
+.searchWindow img{
+    z-index: 1;
+    position: absolute;
+    left: 1120px;
+    top: 27px;
+}
+
+.searchWindow img:hover{
+    filter: brightness(85%);
+}
+
+span.search.active{
+    display: inline-block;
+}
+
+span.search .searchTab{
+    height: 33px;
+    margin: 15px 0;
+    padding-left: 18px;
+    border-right: solid 1px #E9E9E9;
+}
+
+span.search .location{
+    padding-left: 33px;
+    width: 250px;
+}
+
+span.search#tab1 .checkIn,
+span.search#tab1 .checkOut{
+    width: 118px;
+}
+
+span.search#tab2 .date{
+    width: 260px;
+}
+
+span.search .traveler{
+    border-right: 0;
+    width: 257px;
+}
+
+span.search .searchTab.pointed:hover{
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    background-color: #E9E9E9;
+    border-radius: 2em;
+}
+
+span.search h.small{
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+span.search h.big{
+    text-align: left;
+    color: gray;
+    font-size: 14px;
+}
+
+.bar{
+    border-top: solid 1px #D8D8D8;
+}
+
+.bar .barItem{
+    text-align: center;
+    padding: 14px 0;
+    margin: 15px 17px;
+    color: gray;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.bar .barItem.first{
+    margin-left: 75px;
+}
+
+.bar .barItem img{
+    margin-bottom: 5px;
+    filter: opacity(63%);
+    width: 23px;
+    height: 23px;
+}
+
+.bar .barItem.active{
+    color: black;
+    border-bottom: solid 3px;
+    img { filter: opacity(200%); }
+}
+
+.bar .barItem:not(.active):hover{
+    color:black;
+    border-bottom: solid 3px #D8D8D8;
+    img { filter: opacity(200%); }
+}
+
+
+/*MAIN*/
+.list section{
+    margin-left: 75px;
+}
+
+.list img{
+    width: 320px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5%;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.list div{
+    color: gray;
+    font-size: 15px;
+}
+
+.list .title{
+    color: black;
+    font-weight: bold;
+}
+
+.list .rank{
+    color: black;
+    float: right;
+    margin-right: 20px;
+}
+
+.list .price{
+    color: black;
+    margin-top: 7px;
+    margin-bottom: 40px;
+}
+
+.list .price span{
+    font-weight: bold;
+}
+
+.list span{
+    position: relative;
+}
+
+.list .heart{
+    z-index: 2;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    margin-top: 15px;
+    margin-left: 282px;
+}
+
+.list {
+    display: none;
+}
+
+.list.active{
+    display: inline-block;
+}
+
+
+/*FOOTER*/
+footer {
+    padding-top: 45px;
+    background-color: #F6F6F6;
+}
+
+footer h {
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+footer .tab {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 37px;
+    margin-left: 70px;
+    border-bottom: solid 2px #D3D3D3;
+}
+
+footer span {
+    font-size: 14px;
+    color: #6E6E6E;
+    margin-right: 20px;
+    padding-bottom: 15px;
+}
+
+footer span.active {
+    color: black;
+    border-bottom: solid 2px;
+}
+
+footer .item span {
+    margin: 10px 0 0 0;
+    width: 220px;
+    color: black;
+}
+
+footer .item span.wide1{
+    width: 270px;
+}
+
+footer .item span .big {
+    display: block;
+    font-size: 14px;
+}
+
+footer .item span .small {
+    font-size: 14px;
+    font-weight: 500;
+    color: #6E6E6E;
+}
+
+footer section {
+    padding-bottom: 30px;
+    border-bottom: solid 1px #D9D9D9;
+}
+
+footer section.detail {
+    display: flex;
+    align-items: top;
+}
+
+footer .detail {
+    border-bottom: 0;
+}
+
+footer .detail span {
+    margin: 50px 130px 0 70px;
+    color: black;
+    font-size: 14px;
+    width: 250px;
+}
+
+footer .detail span div {
+    margin-bottom: 10px;
+}
+
+footer .detail span .category {
+    font-weight: bold;
+}
+
+footer section.bottom {
+    width: 90%;
+    border-top: solid 1px #D9D9D9;
+    margin-left: 70px;
+    padding: 0;
+}
+
+footer section.bottom span {
+    color: black;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+
+
+
+footer .two2 {
+    padding: 20px 0;
+    height: 150px;
+}
+
+footer .section {
+    padding: 45px 0;
+    display: inline-block;
+    width: 32%;
+    height: 100%;
+}
+
+
+footer .copyright_bar {
+    height: 20px;
+    width: 100%;
+}
+
+footer .float_left {
+    float: left;
+}
+
+footer .float_right {
+    width: 300px;
+    float: right;
+}
+
+footer .inline_block {
+    display: inline-block;
+}
+
+
+/*OPTION*/
+#option {
+    position: relative;
+    display: none;
+}
+
+#option.active{
+    display: block;
+}
+
+#option .page {
+    display: none;
+}
+
+#option .page.active {
+    display: block;
+}
+
+#option .wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+}
+
+#option .dark {
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    filter: opacity(50%);
+}
+
+#option .window {
+    z-index: 4;
+    position: absolute;
+    width: 1030px;
+    height: 650px;
+    background-color: white;
+    border-radius: 10px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 20px 0 #585858;
+    overflow-y: scroll;
+    transition: transform 0.5s ease-in-out;
+}
+
+#option .window .content .close {
+    margin: 25px 0 0 25px;
+}
+
+#option .window .content div {
+    margin: 25px 0 0 23px;
+}
+
+#option .window .content div.tabs {
+    margin-left: 15px;
+    padding-bottom: 19px;
+    width: 97%;
+}
+
+#option .tabs li {
+    margin-right: 8px;
+    padding: 8px 9px;
+}
+
+#option .tabs li h {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 13px;
+    border-bottom: 2px transparent;
+}
+
+#option .tabs li.active h {
+    border-bottom: solid 2px;
+}
+
+#option .tabs li {
+    transition: transform 0.2s ease-in-out;
+}
+
+#option .pointed:hover {
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    color: gray;
+}
+
+#option .pointed.active:hover,
+#option .language .pointed:hover,
+#option .money .pointed:hover {
+    color: black;
+}
+
+#option .pointed .language .country:hover,
+#option .pointed .money .measure:hover {
+    color: gray;
+}
+
+#option .translate {
+    width: 95%;
+    border-top: solid 1px #D9D9D9;
+}
+
+#option .translate section {
+    margin: 45px 0;
+    width: 350px;
+    height: 80px;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+}
+
+#option .window .content .translate section div {
+    margin: 5px 10px 0 15px;
+}
+
+#option .window .content .translate section div img {
+    margin-left: 5px;
+    vertical-align: text-top;
+}
+
+#option .window .content .translate section div.second {
+    color: gray;
+    font-size: 14px;
+}
+
+#option .window .content .translate .toggle {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin-top: 15px;
+}
+
+#option .page h {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#option .language section,
+#option .money section {
+    margin: 20px 0 45px 0;
+}
+
+#option .language section span,
+#option .money section span {
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 10px;
+    padding: 10px 15px;
+    width: 150px;
+    border: solid 1px transparent;
+}
+
+#option .language section span .country,
+#option .money section span .measure{
+    margin: 0;
+    padding: 0;
+    color: gray;
+}
+
+#option .page section .active {
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+#option #currency .line {
+    margin: 25px 0 0 25px;
+    padding: 0;
+    width: 95%;
+    border-top: solid 1px #D9D9D9;
+}
+
+#option #currency .money {
+    padding-top: 20px;
+}
